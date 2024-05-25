@@ -17,8 +17,6 @@
   </div>
 </template>
 
-<script setup>
-import { ChevronRightIcon, StarIcon } from "@heroicons/vue/20/solid";
-</script>
+<script setup></script>
 
 <style scoped></style>
