@@ -4,40 +4,23 @@
       class="mx-auto max-w-md px-6 sm:max-w-3xl lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8"
     >
       <div>
-        <div>
-          <img
-            class="h-11 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=500"
-            alt="Your Company"
-          />
-        </div>
         <div class="mt-20">
-          <div>
-            <a href="#" class="inline-flex space-x-4">
-              <span
-                class="rounded bg-rose-50 px-2.5 py-1 text-sm font-semibold text-rose-500"
-                >What's new</span
-              >
-              <span
-                class="inline-flex items-center space-x-1 text-sm font-medium text-rose-500"
-              >
-                <span>Just shipped v0.1.0</span>
-                <ChevronRightIcon class="h-5 w-5" aria-hidden="true" />
-              </span>
-            </a>
-          </div>
           <div class="mt-6 sm:max-w-xl">
             <h1
               class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
             >
-              Issue management for growing teams
+              Lorem ipsum dolor sit amet.
             </h1>
-            <p class="mt-6 text-xl text-gray-500">
+            <h3 class="mt-6 text-2xl text-gray-500 font-semibold">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo.
+            </h3>
+            <p class="mt-12 text-xl text-gray-500">
+              Coming soon! To be the first to know when we launch, share your
+              email address below.
             </p>
           </div>
-          <form action="#" class="mt-12 sm:flex sm:w-full sm:max-w-lg">
+          <form action="#" class="mt-6 sm:flex sm:w-full sm:max-w-lg">
             <div class="min-w-0 flex-1">
               <label for="hero-email" class="sr-only">Email address</label>
               <input
@@ -56,23 +39,11 @@
               </button>
             </div>
           </form>
-          <div class="mt-6">
-            <div class="inline-flex items-center divide-x divide-gray-300">
-              <div class="flex flex-shrink-0 pr-5">
-                <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-              </div>
-              <div
-                class="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3"
-              >
-                <span class="font-medium text-gray-900">Rated 5 stars</span>
-                by over
-                <span class="font-medium text-rose-500">500 beta users</span>
-              </div>
-            </div>
+          <div class="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">
+            <p class="font-normal text-gray-600">
+              We will not spam your inbox with emails, nor sell your
+              information.
+            </p>
           </div>
         </div>
       </div>
