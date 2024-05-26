@@ -9,4 +9,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/content"],
+  routeRules: {
+    "/": { isr: true, prerender: true },
+  },
 });
