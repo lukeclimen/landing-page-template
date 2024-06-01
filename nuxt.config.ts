@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxt/image"],
   routeRules: {
     "/": { isr: true, prerender: true },
   },
