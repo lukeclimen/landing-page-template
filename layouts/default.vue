@@ -5,8 +5,6 @@
 
 <template>
   <main>
-    <div class="bg-white py-4">
-      <slot />
-    </div>
+    <slot />
   </main>
 </template>
