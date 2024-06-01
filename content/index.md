@@ -1,7 +1,11 @@
-# Nuxt Content
+::page-hero
+The header of the hero
+::
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
+::company-details
+Details of the company
+::
 
----
-
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+::call-to-action
+Action call
+::
