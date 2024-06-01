@@ -6,14 +6,16 @@
       <div>
         <div class="mt-20">
           <div class="mt-6 sm:max-w-xl page-header">
-            <slot />
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+            >
+              <ContentSlot :use="$slots.title" />
+            </h1>
             <h3 class="mt-6 text-2xl text-gray-500 font-semibold">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo.
+              <ContentSlot :use="$slots.subtitle" />
             </h3>
             <p class="mt-12 text-xl text-gray-500">
-              Coming soon! To be the first to know when we launch, share your
-              email address below.
+              <ContentSlot :use="$slots.aboveFormContent" />
             </p>
           </div>
           <form action="#" class="mt-6 sm:flex sm:w-full sm:max-w-lg">
@@ -31,14 +33,13 @@
                 type="submit"
                 class="block w-full rounded-md border border-transparent bg-rose-500 px-5 py-3 text-base font-medium text-white shadow hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:px-10"
               >
-                Notify me
+                <ContentSlot :use="$slots.formButtonContent" />
               </button>
             </div>
           </form>
           <div class="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">
             <p class="font-normal text-gray-600">
-              We will not spam your inbox with emails, nor sell your
-              information.
+              <ContentSlot :use="$slots.belowFormContent" />
             </p>
           </div>
         </div>
@@ -101,8 +102,7 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData("index", () => queryContent("/").findOne());
-console.log(data.value);
+import { ChevronRightIcon, StarIcon } from "@heroicons/vue/20/solid";
 </script>
 
 <style scoped></style>
