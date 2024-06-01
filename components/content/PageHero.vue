@@ -5,12 +5,8 @@
     >
       <div>
         <div class="mt-20">
-          <div class="mt-6 sm:max-w-xl">
-            <h1
-              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-            >
-              Lorem ipsum dolor sit amet.
-            </h1>
+          <div class="mt-6 sm:max-w-xl page-header">
+            <slot />
             <h3 class="mt-6 text-2xl text-gray-500 font-semibold">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo.
@@ -105,7 +101,8 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronRightIcon, StarIcon } from "@heroicons/vue/20/solid";
+const { data } = await useAsyncData("index", () => queryContent("/").findOne());
+console.log(data.value);
 </script>
 
 <style scoped></style>
