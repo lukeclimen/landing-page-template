@@ -22,7 +22,11 @@ information.
 ::
 
 ::company-details
+#title
 Details of the company
+
+#content
+
 ::
 
 ::call-to-action
