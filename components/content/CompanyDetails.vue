@@ -3,9 +3,9 @@
     <div
       class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8"
     >
-      <CompanyTestimonial />
+      <slot />
       <div class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
-        <CompanyDescription />
+        <slot />
       </div>
     </div>
   </div>

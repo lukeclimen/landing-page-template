@@ -22,7 +22,12 @@ information.
 ::
 
 ::company-details
-Details of the company
+
+:::company-testimonial
+:::
+
+:::company-description
+:::
 ::
 
 ::call-to-action
