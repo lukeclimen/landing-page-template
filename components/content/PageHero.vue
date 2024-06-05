@@ -9,13 +9,13 @@
             <h1
               class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
             >
-              <ContentSlot :use="$slots.title" />
+              <ContentSlot :use="$slots.title" unwrap="h1" />
             </h1>
             <h3 class="mt-6 text-2xl text-gray-500 font-semibold">
-              <ContentSlot :use="$slots.subtitle" />
+              <ContentSlot :use="$slots.subtitle" unwrap="h3" />
             </h3>
             <p class="mt-12 text-xl text-gray-500">
-              <ContentSlot :use="$slots.aboveFormContent" />
+              <ContentSlot :use="$slots.aboveFormContent" unwrap="p" />
             </p>
           </div>
           <form action="#" class="mt-6 sm:flex sm:w-full sm:max-w-lg">
@@ -39,7 +39,7 @@
           </form>
           <div class="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">
             <p class="font-normal text-gray-600">
-              <ContentSlot :use="$slots.belowFormContent" />
+              <ContentSlot :use="$slots.belowFormContent" unwrap="p" />
             </p>
           </div>
         </div>
